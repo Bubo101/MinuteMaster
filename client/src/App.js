@@ -8,7 +8,6 @@ function App() {
       <header className="App-header">
         <h1>MinuteMaster Upload</h1>
         <AudioRecorder />
-        <AudioUpload />
       </header>
     </div>
   );

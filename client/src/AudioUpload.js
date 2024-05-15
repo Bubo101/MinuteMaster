@@ -30,7 +30,7 @@ function AudioUpload() {
     <div>
       <form onSubmit={handleSubmit}>
         <input type="file" onChange={handleFileChange} accept="audio/*" />
-        <button type="submit">Upload</button>
+        <button type="submit">Submit for Minutes</button>
       </form>
     </div>
   );

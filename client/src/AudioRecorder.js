@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import axios from 'axios';
+import AudioUpload from './AudioUpload';
 
 function AudioRecorder() {
   const [isRecording, setIsRecording] = useState(false);
@@ -59,6 +60,9 @@ function AudioRecorder() {
       <button onClick={startRecording} disabled={isRecording}>Start Recording</button>
       <button onClick={stopRecording} disabled={!isRecording}>Stop Recording</button>
       <audio ref={audioRef} controls />
+      <div>
+        <AudioUpload />
+      </div>
     </div>
   );
 }
